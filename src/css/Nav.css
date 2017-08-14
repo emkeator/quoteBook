@@ -53,9 +53,9 @@ nav{
     align-items: center;
 }
 
-nav .fa{
+nav img{
     /*DIMENSION*/
-    height: 100%;
+    height: 75%;
     padding: 10px;
     font-size: 75px;
 
@@ -89,7 +89,7 @@ nav .fa{
     .desktop-nav{
         display: flex;
     }
-    nav .fa{
+    nav img{
         display: none;
     }
 }

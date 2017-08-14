@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import menu from '../img/hamburger_for_brennan.png'
 
 export default class Nav extends Component {
     constructor(){
@@ -37,7 +38,7 @@ export default class Nav extends Component {
                     <li className="desktop-nav-opt my-quotes"><Link to='quotebook'>My Quotes</Link></li>
                 </ul>
 
-                <i onClick={this.handleDropdown}className="fa fa-bars" aria-hidden="true"></i>
+                <img src={menu} alt="menu" onClick={this.handleDropdown}/>
 
                 {this.state.dropdown && 
                 <ul className='mobile-nav'>
