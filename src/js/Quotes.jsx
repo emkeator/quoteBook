@@ -27,7 +27,7 @@ export default class Quotes extends Component {
                 {this.state.quote &&
                     <div className="quote">
                         <p className="quoteText">"{this.state.quote.quoteText}"</p>
-                        <span className="quoteAuthor">--{this.state.quote.quoteAuthor}</span>
+                        <span className="quoteAuthor">--{this.state.quote.quoteAuthor ? this.state.quote.quoteAuthor : 'Anonymous'}</span>
                     </div>}
             </section>
         )
