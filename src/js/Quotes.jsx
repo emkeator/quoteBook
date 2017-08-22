@@ -11,12 +11,17 @@ export default class Quotes extends Component {
         }
     }
 
-    componentDidMount() {
-        getNewQuote().then(response => {
+    async componentDidMount() {
+        try {
+            let quote = await getNewQuote()
             this.setState({
-                quote: response.data
+                quote: quote.data 
+                
             })
-        })
+        }
+        catch(err){
+            console.log(err)
+        }
     }
 
     render() {
