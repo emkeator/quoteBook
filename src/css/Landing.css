@@ -1,0 +1,71 @@
+.Landing{
+    /*DIMENSION*/
+    height: 100%;
+    width: 100%;
+
+    /*LAYOUT*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Landing h1{
+    /*DIMENSION*/
+    height: 40%;
+    width: 40%;
+    border-radius: 5px;
+
+    /*LAYOUT*/
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+
+    /*FONT*/
+    font-size: 80px;
+    color: var(--mustard);
+
+    /*BACKGROUND*/
+    background-color: var(--light-screen);
+}
+
+.Landing button{
+    /*DIMENSION*/
+    height: 75px;
+    width: 125px;
+    border-radius: 5px;
+
+    /*LAYOUT*/
+    position: absolute;
+
+    /*FONT*/
+    font-family: var(--font-disp);
+    font-size: 25px;
+    color: var(--dark-white);
+
+    /*BACKGROUND*/
+    background-color: var(--light-screen);
+
+    /*MISC*/
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/*RESPONSE*/
+@media(max-width: 850px){
+    .Landing h1{
+        /*DIMENSION*/
+        width: 255px;
+        height: 30%;
+
+        /*FONT*/
+        font-size: 50px;
+
+    }
+}
+@media(min-width: 600px){
+    .Landing button:hover{
+        background-color: var(--mustard);
+        color: var(--light-screen)
+    }
+}

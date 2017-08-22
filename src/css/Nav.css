@@ -1,7 +1,9 @@
 nav{
     /*DIMENSION*/
     width: 100vw;
-    height: 100px;
+    height: 60px;
+    padding: 15px;
+    box-sizing: border-box;
 
     /*FONT*/
     font-family: var(--font-disp);
@@ -53,25 +55,32 @@ nav{
     align-items: center;
 }
 
+.desktop-nav-opt:hover, .desktop-nav-opt a:hover{
+    background-color: var(--mustard);
+    color: var(--light-screen);
+}
+
 nav img{
     /*DIMENSION*/
-    height: 75%;
-    padding: 10px;
-    font-size: 75px;
+    height: 100%;
 
     /*LAYOUT*/
     float: right;
 }
-
+nav .logo{
+    /*FONT*/
+    font-size: 40px;
+    color: var(--mustard);
+}
 .mobile-nav{
     /*DIMENSION*/
-    height: 150px;
+    height: 300px;
     width: 60%;
 
     /*LAYOUT*/
     position: absolute;
     right: 0;
-    top: 100px;
+    top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,12 +93,12 @@ nav img{
 /*RESPONSE*/
 @media(min-width: 600px){
     nav{
-        background-color: in;
+        height: 100px;
     }
     .desktop-nav{
         display: flex;
     }
-    nav img{
+    nav img, .logo{
         display: none;
     }
 }

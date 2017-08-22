@@ -19,3 +19,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+server/config.json
+
+# sensitive server files
+server/keys.js
+
+# sensitive server files
+server/keys.js

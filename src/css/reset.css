@@ -57,3 +57,7 @@ input:focus, button:focus{
 html{
 	overflow: hidden;
 }
+button{
+	background:none;
+	border: none;
+}

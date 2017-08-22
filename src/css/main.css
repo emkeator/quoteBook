@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    /*DEFAULT FONT*/
+    font-family: var(--font-text);
+    color: var(--dark-white);
 }
 
 /*RESPONSE*/
