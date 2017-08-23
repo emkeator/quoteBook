@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { login } from '../utils/api.js'
  
 export default class Landing extends Component {
     constructor(){
@@ -7,13 +8,11 @@ export default class Landing extends Component {
         this.state={
             showLogin: false
         }
-        this.showLogin=this.showLogin.bind(this) 
+        this.login=this.login.bind(this) 
     }
 
-    showLogin(){
-        this.setState({
-            showLogin: !this.state.showLogin 
-        })
+    login(){
+        login()
     }
 
     render(){
@@ -21,7 +20,7 @@ export default class Landing extends Component {
         return (
             <main className="Landing">
                 <h1>quoteBook.</h1>
-                <button className="login" onClick={this.showLogin}>Login</button>
+                <button className="login" onClick={this.login}>Login</button>
             </main>
         )
     }
